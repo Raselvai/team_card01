@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	color: #02323e;
+}
+
+
+.team_wrapper {
+	padding: 80px 0;
+	background: #02323e;
+}
+
+.team_wrapper .head_text {
+	font-size: 40px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.team_wrapper .team_box {
+	position: relative;
+	transition: .3s;
+	margin-top: 50px;
+	border: 2px solid transparent;
+}
+
+.team_wrapper .team_box:hover {
+	border: 2px solid #fd5523;
+}
+
+.team_wrapper .team_box .image {
+	position: relative;
+	overflow: hidden;
+}
+
+.team_wrapper .team_box .image img {
+	transition: .5s;
+}
+
+.team_wrapper .team_box:hover .image img {
+	transform: scale(1.08);
+}
+
+.team_wrapper .team_box .team_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 30px;
+	background: linear-gradient(180deg, rgba(6, 16, 21, 0.26) 0%, #0D1D26 100%);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+}
+
+.team_wrapper .team_box:hover .team_content {
+	visibility: visible;
+	opacity: 1;
+}
+
+.team_wrapper .team_box .team_content h3 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.team_wrapper .team_box .team_content h3 a {
+	color: #ffffff;
+	transition: .3s;
+}
+
+.team_wrapper .team_box .team_content h3 a:hover {
+	text-decoration: none;
+	color: #fd5523;
+}
+
+.team_wrapper .team_box .team_content p {
+	font-size: 15px;
+	margin-top: 15px;
+	color: #ffffff;
+}
+
+.team_wrapper .social_icon {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_wrapper .social_icon a {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-size: 25px;
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.2);
+	margin-top: 15px;
+	transition: .4s;
+}
+
+.team_wrapper .social_icon a:hover {
+	text-decoration: none;
+	background: #fd5523;
+}
